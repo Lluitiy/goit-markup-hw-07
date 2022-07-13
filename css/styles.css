@@ -611,7 +611,7 @@ footer {
 }
 /* Чем мы занимаемся*/
 
-.head-doing {
+.work {
     text-align: center;
     margin: 0px;
     margin-bottom: 50px;
@@ -621,17 +621,13 @@ footer {
     letter-spacing: 0.03em;
 }
 
-.works {
+.work__list {
     display: flex;
     gap: 30px;
     margin: 0px;
 }
-.work-foto {
-    display: block;
-    margin: 0px;
-}
 
-.work-overlay {
+.work--overlay {
     position: relative;
     display: flex;
     text-align: center;
@@ -639,7 +635,12 @@ footer {
     width: 370px;
 }
 
-.work-label {
+.work__foto {
+    display: block;
+    margin: 0px;
+}
+
+.work__label {
     position: absolute;
     left: 0;
     bottom: 0;
