@@ -475,7 +475,7 @@ footer {
     
 }
 
-.checkbox-position {
+.modal-form__checkbox--position {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -537,7 +537,7 @@ footer {
 }
 /* Особенности */
 
-.pad {
+.features {
     padding-top: 94px;
 }
 
@@ -556,12 +556,12 @@ footer {
     overflow: hidden;
     }
 
-.features {
+.feature__list {
     display: flex;
     gap: 30px;
 }
 
-.feature {
+.feature__name {
     width: 270px;
     margin-bottom: 10px;
     font-weight: 700;
@@ -571,14 +571,14 @@ footer {
     text-transform: uppercase;
 }
 
-.about-feature {
+.feature__about {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--description-color);
 }
 
-.feature-item::before {
+.feature__item::before {
     display: block;
     content: "";
     height: 120px;
@@ -591,22 +591,22 @@ footer {
     border-radius: 4px;
 }
 
-.icon-antena::before {
+.feature__icon--antena::before {
     background-image: url(../img/icons/antenna.svg);
     fill: rebeccapurple;
     
 
 }
 
-.icon-clock::before {
+.feature__icon--clock::before {
     background-image: url(../img/icons/clock.svg);
 }
 
-.icon-diagram::before {
+.feature__icon--diagram::before {
     background-image: url(../img/icons/diagram.svg);
 }
 
-.icon-astronaut::before {
+.feature__icon--astronaut::before {
     background-image: url(../img/icons/astronaut.svg);
 }
 /* Чем мы занимаемся*/
