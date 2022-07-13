@@ -55,7 +55,7 @@
       <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
 
       <div class="backdrop is-hidden" data-modal>
-         <div class="modal">
+         <div class="modal-form">
             <button class="button-close" data-modal-close>
                <div >
                   <svg class="cross-button" width="30px" height="30px">
@@ -63,61 +63,57 @@
                   </svg>
                </div>
             </button>
-               <div class="form-head">
+               <div class="modal-form__heading">
                   <p>Оставьте свои данные, мы вам перезвоним</p>
                 </div>
-                  <div class="form-labels">
-                     <form class="form">
-                        <label name=""  for="name" class="lable-relative">
-                           Имя
-                        </label>
-                        <div class="thumb" >
-                           <input type="text" class="labels" id="name">
-                           <svg class="icon-lable">
-                              <use href="./img/icons/sprite.svg#person"  width="18px" height="18px">
+                  <form class="modal-form__header">
+                     <label name=""  for="name">
+                        Имя
+                     </label>
+                     <div class="modal-form__thumb">  <!-- не могу переименовать по БЭМУ слетает релатив -->
+                        <input type="text" class="modal-form__input" id="name">
+                        <svg class="modal-form__icon">
+                           <use href="./img/icons/sprite.svg#person"  width="18px" height="18px">
+                           </use>
+                        </svg>
+                     
+                     </div>
+                     <label name="" for="tel">
+                        Телефон 
+                     </label>
+                     <div class="modal-form__thumb"> 
+                        <input type="tel" class="modal-form__input" id="tel">
+                        <svg class="modal-form__icon">
+                           <use href="./img/icons/sprite.svg#phone"  width="18px" height="18px">
+                           </use>
+                        </svg>
+                     </div>
+                     <label name="" for="email">
+                        Почта
+                     </label>
+                     <div class="modal-form__thumb">
+                        <input type="email" class="modal-form__input" id="email"> 
+                        <svg class="modal-form__icon">
+                           <use href="./img/icons/sprite.svg#mail"  width="18px" height="18px">
+                           </use>
+                        </svg>
+                     </div>
+                     <label for="comment">
+                        Коментарий
+                     </label>
+                     <textarea name="comment" class="modal-form__input modal-form__placeholder" placeholder="Введите текст"></textarea>
+                  <div class="modal-form__agreement">
+                        <label class="checkbox-position">
+                           <input type="checkbox" class="modal-form__checkbox--hidden">
+                           <svg class="modal-form__checkbox--fake" width="16px" height="15px">
+                              <use href="./img/icons/sprite.svg#mark">
                               </use>
                            </svg>
-                        
-                        </div>
-                        <label name="" for="tel">
-                           Телефон 
+                           Соглашаюсь с рассылкой и принимаю <a href="" class="modal-form__link">Условия договора</a>
                         </label>
-                        <div class="thumb"> 
-                           <input type="tel" class="labels" id="tel">
-                           <svg class="icon-lable">
-                              <use href="./img/icons/sprite.svg#phone"  width="18px" height="18px">
-                              </use>
-                           </svg>
-                        </div>
-                        
-                        <label name="" for="email">
-                           Почта
-                        </label>
-                        <div class="thumb">
-                           <input type="email" class="labels" id="email"> 
-                           <svg class="icon-lable">
-                              <use href="./img/icons/sprite.svg#mail"  width="18px" height="18px">
-                              </use>
-                           </svg>
-                        </div>
-                        
-                        <label for="comment">
-                           Коментарий
-                        </label>
-                        <textarea name="" class="labels placeholder" placeholder="Введите текст" for="comment"></textarea>
-                     <div class="agreement">
-                           <label class="checkbox-position">
-                              <input type="checkbox" class="checkbox-hide">
-                              <svg class="checkbox-fake" width="16px" height="15px">
-                                 <use href="./img/icons/sprite.svg#mark">
-                                 </use>
-                              </svg>
-                              Соглашаюсь с рассылкой и принимаю <a class="agreement-link">Условия договора</a>
-                           </label>
-                      </div>
-                        <button type="submit" class="button submit">Отправить</button>
-                     </form>
-                  </div>
+                     </div>
+                     <button type="submit" class="modal-form__submit">Отправить</button>
+                  </form>
          </div>
       </div>
    </div>
