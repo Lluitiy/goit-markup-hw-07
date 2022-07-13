@@ -20,25 +20,25 @@
 <!-- Верхняя линия -->
 <header>
    <div class="container head">
-      <a href="index.html" class="logo">Web<span class="logo-black">Studio</span></a>
+      <a href="index.html" class="logo--accent">Web<span class="logo">Studio</span></a>
       <nav>
-         <ul class="navigators">
-            <li><a href="index.html" class="navigator current">Студия</a></li>
-            <li><a href="portfolio.html" class="navigator">Портфолио</a></li>
-            <li><a href="" class="navigator">Контакты</a></li>
+         <ul class="nav">
+            <li><a href="index.html" class="nav__item current">Студия</a></li>
+            <li><a href="portfolio.html" class="nav__item">Портфолио</a></li>
+            <li><a href="" class="nav__item">Контакты</a></li>
          </ul>
 
       </nav>
-      <ul class="head-infos">
-         <li class="head-item">
-            <a href="email:info@devstudio.com" class="head-info">
-               <svg class="icon-head" width="16px" height="12px">
+      <ul class="nav-info">
+         <li class="nav-info__item">
+            <a href="email:info@devstudio.com" class="nav-info__link">
+               <svg class="nav-info__icon" width="16px" height="12px">
                   <use href="./img/icons/sprite.svg#envelope"></use>
                </svg>
                info@devstudio.com</a></li>
-         <li class="head-item">
-            <a href="tel:+380961111111" class="head-info">
-               <svg class="icon-head">
+         <li class="nav-info__item">
+            <a href="tel:+380961111111" class="nav-info__link">
+               <svg class="nav-info__icon" width="16px" height="12px">
                   <use href="./img/icons/sprite.svg#smartphone"></use>
                </svg>
                +38 096 111 11 11</a></li>
@@ -50,9 +50,9 @@
 <!-- Шапка Профиля -->
 <section class="hero overlay">
    <div class=" container">
-      <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
+      <h1 class="hero__text">Эффективные решения для вашего бизнеса</h1>
       <!-- Кнопка-->  
-      <button type="button" class="button" data-modal-open>Заказать услугу</button>
+      <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
 
       <div class="backdrop is-hidden" data-modal>
          <div class="modal">

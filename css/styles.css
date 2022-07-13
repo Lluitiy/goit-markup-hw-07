@@ -75,7 +75,7 @@ footer {
     align-items: baseline;
     background-color: var(--main-white);
 }
-a.logo {
+.logo--accent {
     display: flex;
     font-family: 'Raleway';
     font-style: normal;
@@ -85,17 +85,11 @@ a.logo {
     color: var(--brand-color);
 }
 
-a.logo {
-    text-decoration: none;
-}
-
-.logo-black {
+.logo {
     color: #000000;
 }
 
-.navigators {
-    /* position: relative; */
-
+.nav {
     display: flex;
     justify-content: space-between;
     gap: 50px;
@@ -103,7 +97,7 @@ a.logo {
     padding: 0px;
 }
 
-.navigator {
+.nav__item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,7 +117,7 @@ a.logo {
 
 
 
-.navigators .navigator.current {
+.nav__item.current {
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -132,7 +126,7 @@ a.logo {
 
 }
 
-.navigators .navigator.current::after {
+.nav__item.current::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -144,14 +138,14 @@ a.logo {
     border-radius: 2px;
 }
 
-.navigators .navigator:hover,
-.navigators .navigator:focus {
+.nav__item:hover,
+.nav__item:focus {
     color: var(--brand-color);
     transform: scale(1.2);
 
 }
 
-.head-infos {
+.nav-info {
     display: flex;
     text-align: center;
     align-items: baseline;
@@ -162,47 +156,42 @@ a.logo {
 
     color: var(--description-color);
 
-    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1),
-            color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.head-infos:focus,
-.head.infos:hover {
+.nav-info:focus,
+.nav-info:hover {
     color: var(--brand-color);
-    transform: scale(1.1);
 }
 
-.head-info {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1),
-            color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-a.head-info {
-    color: var(--description-color);
-    text-decoration: none;
-}
-
-
-.head-infos .head-info:hover,
-.head-infos .head-info:focus {
-    color: var(--brand-color);
-    transform: scale(1.1);
-    text-decoration: none;
-}
-
-.head-item {
+.nav-info__item {
     display: flex;
     text-align: center;
     gap: 10px;
     align-items: baseline;
 }
 
-.icon-head {
+.nav-info__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-info__link {
+    color: var(--description-color);
+    text-decoration: none;
+}
+
+
+.nav-info__link:hover,
+.nav-info__link:focus {
+    color: var(--brand-color);
+}
+
+.nav-info__icon {
     margin-right: 10px;
     width: 16px;
     height: 12px;
@@ -229,7 +218,7 @@ a.head-info {
     background-color: black;
 }
 
-.hero-text {
+.hero__text {
     display: block;
     text-align: center;
     margin: 0px auto;
@@ -245,7 +234,7 @@ a.head-info {
 }
 /* Кнопка */
 
-.button {
+.hero__button {
     display: block;
     text-align: center;
     margin: 0px auto;
@@ -490,7 +479,18 @@ a.head-info {
     display: block;
     padding: 10px 55px;
     margin: 0px auto;
-
+    text-align: center;
+    margin: 0px auto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--main-white);
+    cursor: pointer;
+    background: var(--brand-color);
+    border: 1px solid transparent;
+    border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -977,10 +977,16 @@ a.location {
     height: 50px;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
     margin: 0px;
     padding: 10px 27px;
-    
+    cursor: pointer;
+    color: var(--main-white);
+    background: var(--brand-color);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .subscription::after {
@@ -1160,5 +1166,4 @@ a.location {
     width: 370px;
 
     padding: 20px 24px;
-    
 }
