@@ -942,6 +942,8 @@ a.location {
 }
 
 .footer__icon {
+    display: flex;
+    justify-content: center;
     align-items: center;
     fill: currentColor;
 }
