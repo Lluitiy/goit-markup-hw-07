@@ -1,7 +1,3 @@
-.features {
-    padding-top: 94px;
-}
-
 .no-see {
     color: transparent;
     position: absolute;
@@ -17,53 +13,55 @@
     overflow: hidden;
 }
 
-.feature__list {
-    display: flex;
-    gap: 30px;
+.feature {
+    padding-top: 94px;
+
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+    &__name {
+        width: 270px;
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+    &__about {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $description-color;
+    }
+    &__item::before {
+        display: block;
+        content: "";
+        height: 120px;
+        padding: 25px 100px;
+        background-size: 70px 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: $background-icons;
+        margin-bottom: 30px;
+        border-radius: 4px;
+    }
+
+    &__icon--antena::before {
+        background-image: url(../img/icons/antenna.svg);
+    }
+
+    &__icon--clock::before {
+        background-image: url(../img/icons/clock.svg);
+    }
+
+    &__icon--diagram::before {
+        background-image: url(../img/icons/diagram.svg);
+    }
+
+    &__icon--astronaut::before {
+        background-image: url(../img/icons/astronaut.svg);
+    }
 }
 
-.feature__name {
-    width: 270px;
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-
-.feature__about {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $description-color;
-}
-
-.feature__item::before {
-    display: block;
-    content: "";
-    height: 120px;
-    padding: 25px 100px;
-    background-size: 70px 70px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: $background-icons;
-    margin-bottom: 30px;
-    border-radius: 4px;
-}
-
-.feature__icon--antena::before {
-    background-image: url(../img/icons/antenna.svg);
-}
-
-.feature__icon--clock::before {
-    background-image: url(../img/icons/clock.svg);
-}
-
-.feature__icon--diagram::before {
-    background-image: url(../img/icons/diagram.svg);
-}
-
-.feature__icon--astronaut::before {
-    background-image: url(../img/icons/astronaut.svg);
-}

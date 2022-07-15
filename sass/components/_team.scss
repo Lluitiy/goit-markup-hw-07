@@ -1,48 +1,48 @@
-.team__section {
-    padding: 94px 0px;
-    background-color: #F5F4FA;
-}
+.team {
+    &__section {
+        padding: 94px 0px;
+        background-color: #F5F4FA;
+    }
 
-.team--bg {}
+    &__tittle {
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
 
-.team__tittle {
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
 
-.team__list {
-    display: flex;
-    gap: 30px;
-}
+    &__item {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        background: $main-white;
+    }
 
-.team__item {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    background: $main-white;
-}
+    &__member {
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
 
-.team__member {
-    margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
+    &__description {
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $description-color;
+        margin-bottom: 16px;
+    }
 
-.team__description {
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $description-color;
-    margin-bottom: 16px;
-}
-
-.team__box {
-    padding-top: 30px;
+    &__box {
+        padding-top: 30px;
+    }
 }
