@@ -1,0 +1,19 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+$brand-color: #2196f3;
+$primary-color: #212121;
+$description-color: #757575;
+$background-icons: #F5F4FA;
+$main-white: #FFFFFF;
+
+
+$main-font: 'Roboto', sans-serif;
+$secondary-font: 'Raleway', sans-serif;

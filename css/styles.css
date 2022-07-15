@@ -1,4 +1,4 @@
-html {
+/* html {
     box-sizing: border-box;
 }
 *,
@@ -13,9 +13,9 @@ html {
     --description-color: #757575;
     --background-icons: #F5F4FA;
     --main-white: #FFFFFF;
-}
+} */
 
-a {
+/* a {
     text-decoration: none;
 }
 
@@ -40,35 +40,34 @@ li {
 body {
     background: var(--main-white);
     font-family: 'Roboto', sans-serif;
-    color:var(--primary-color);
+    color:$primary-color;
 
 }
 
 header {
     padding-top: 24px;
-    /* padding-bottom: 25px; */
     border-bottom: 1px solid #ECECEC;
 }
 
 footer {
     padding: 60px 0px;
     background-color: #2F303A;
-}
+} */
 
-.section {
+/* .section {
     padding: 94px 0px;
-}
+} */
 /* Верхняя линия */
 
-.container {
+/* .container {
     width: 1200px;
     margin: 0px auto;
     padding: 0px 15px;
     align-items: center;
 
-}
+} */
 
-.head {
+/* .head {
     display: flex;
     align-items:center;
     justify-content: center;
@@ -83,7 +82,7 @@ footer {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: var(--brand-color);
+    color: $brand-color;
 }
 
 .logo {
@@ -103,7 +102,7 @@ footer {
     align-items: center;
     justify-content: center;
     position: relative;
-    color: var(--primary-color);
+    color: $primary-color;
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -123,7 +122,7 @@ footer {
     justify-content: center;
     align-items: baseline;
     height: 48px;
-    color: var(--brand-color);
+    color: $brand-color;
 
 }
 
@@ -141,7 +140,7 @@ footer {
 
 .nav__item:hover,
 .nav__item:focus {
-    color: var(--brand-color);
+    color: $brand-color;
     transform: scale(1.2);
 
 }
@@ -162,7 +161,7 @@ footer {
 
 .nav-info:focus,
 .nav-info:hover {
-    color: var(--brand-color);
+    color: $brand-color;
 }
 
 .nav-info__item {
@@ -189,7 +188,7 @@ footer {
 
 .nav-info__link:hover,
 .nav-info__link:focus {
-    color: var(--brand-color);
+    color: $brand-color;
 }
 
 .nav-info__icon {
@@ -198,7 +197,7 @@ footer {
     height: 12px;
     fill: currentColor;
     stroke: currentColor;
-}
+} */
 /* Шапка Профиля */
 
 .hero {
@@ -240,7 +239,7 @@ footer {
     text-align: center;
     margin: 0px auto;
     cursor: pointer;
-    background: var(--brand-color);
+    background: $brand-color;
     padding: 10px 32px;
     border-width: 1px;
     border-radius: 4px;
@@ -333,7 +332,7 @@ footer {
     justify-content: center;
     margin: 8px 8px 1px auto;
 
-    color: var(--primary-color);
+    color: $primary-color;
     background-color: var(--main-white);
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -347,7 +346,7 @@ footer {
 .button-close:hover,
 .button-close:focus {
     transform: scale(1.1);
-    background-color: var(--brand-color);
+    background-color: $brand-color;
     color: var(--main-white);
     
 }
@@ -401,7 +400,7 @@ footer {
     padding: 11px 12px 11px 32px;
     width: 448px;
     height: 40px;
-    color: var(--primary-color);
+    color: $primary-color;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -425,13 +424,13 @@ footer {
 
 .modal-form__input:hover,
 .modal-form__input:focus {
-    border-color: var(--brand-color);
+    border-color: $brand-color;
     outline: transparent;
 }
 
 .modal-form__input:hover + .modal-form__icon,
 .modal-form__input:focus + .modal-form__icon {
-    fill: var(--brand-color);
+    fill: $brand-color;
 }
 
 .modal-form__placeholder {
@@ -440,14 +439,14 @@ footer {
     resize: none;
     padding: 12px 16px;
     color: rgba(117, 117, 117, 0.5);
-    text-decoration: underline 0.5px solid var(--brand-color);
+    text-decoration: underline 0.5px solid $brand-color;
 
     transition: border-color 250ms cubic-bezier(0.4,0,0.2,1);
 }
 
 .modal-form__placeholder:hover,
 .modal-form__placeholder:focus {
-    border-color: var(--brand-color);
+    border-color: $brand-color;
 }
 .modal-form__agreement {
     display: flex;
@@ -466,7 +465,7 @@ footer {
 }
 
 .modal-form__link {
-    color: var(--brand-color);
+    color: $brand-color;
     text-decoration: underline;
 }
 
@@ -497,11 +496,11 @@ footer {
 
 .modal-form__checkbox--fake {
     fill: var(--main-white);
-    border: 1px solid var(--primary-color);
+    border: 1px solid $primary-color;
     border-radius: 3px;
 }
 .modal-form__checkbox--hidden:focus {
-    background-color: var(--brand-color);
+    background-color: $brand-color;
     fill: var(--main-white);
 }
 
@@ -513,8 +512,8 @@ footer {
 }
 
 .modal-form__checkbox--hidden+.modal-form__checkbox--fake:focus {
-    border: var(--brand-color);
-    background-color: var(--brand-color);
+    border: $brand-color;
+    background-color: $brand-color;
 
 }
 
@@ -531,7 +530,7 @@ footer {
     text-align: center;
     color: var(--main-white);
     cursor: pointer;
-    background: var(--brand-color);
+    background: $brand-color;
     border: 1px solid transparent;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -594,9 +593,6 @@ footer {
 
 .feature__icon--antena::before {
     background-image: url(../img/icons/antenna.svg);
-    fill: rebeccapurple;
-    
-
 }
 
 .feature__icon--clock::before {
@@ -750,7 +746,7 @@ footer {
 .socials__item:hover {
     transform: scale(1.3);
     color: var(--main-white);
-    background-color: var(--brand-color);
+    background-color: $brand-color;
 }
 
 .socials__icon {
@@ -761,7 +757,7 @@ footer {
 }
 
 /* Постоянные клиенты */
-
+/* 
 .customers__section {
     padding: 94px 0px;
 }
@@ -788,8 +784,8 @@ footer {
 
 .customers__list:hover,
 .customers__list:focus {
-        border-color: var(--brand-color);
-        color: var(--brand-color);
+        border-color: $brand-color;
+        color: $brand-color;
 }
 
 .customers__item {
@@ -806,9 +802,9 @@ footer {
 .customers__item:focus,
 .customers__item:hover {
     transform: scale(2);
-    border-color: var(--brand-color);
-    color: var(--brand-color);
-    outline: var(--brand-color);
+    border-color: $brand-color;
+    color: $brand-color;
+    outline: $brand-color;
 }
 
 .customers__logo {
@@ -819,7 +815,7 @@ footer {
     height: 92px;
     border: 1px solid currentColor;
     fill: currentColor;
-}
+} */
 
 /* Подвал */
 .footer {
@@ -842,7 +838,7 @@ footer {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: var(--brand-color);
+    color: $brand-color;
 }
 .footer__logo {
     color: var(--main-white);
@@ -878,7 +874,7 @@ footer {
 .footer__info:focus {
     text-decoration: none;
     transform: scale(1.3);
-    color: var(--brand-color);
+    color: $brand-color;
 }
 
 .join {
@@ -939,7 +935,7 @@ footer {
 .join__link:focus {
     transform: scale(1.3);
     color: var(--main-white);
-    background-color: var(--brand-color);
+    background-color: $brand-color;
 }
 
 .join__icon {
@@ -1007,7 +1003,7 @@ footer {
     padding: 10px 27px;
     cursor: pointer;
     color: var(--main-white);
-    background: var(--brand-color);
+    background: $brand-color;
     border: 1px solid transparent;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1050,7 +1046,7 @@ footer {
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--primary-color);
+    color: $primary-color;
     cursor: pointer;
     background: #F5F4FA;
     border-radius: 4px;
@@ -1066,7 +1062,7 @@ footer {
 .project__button:focus {
     cursor: pointer;
     transform: scale(1.1);
-    background: var(--brand-color);
+    background: $brand-color;
     color: var(--main-white);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
@@ -1109,7 +1105,7 @@ footer {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--primary-color);
+    color: $primary-color;
 }
 
 .project__description {
@@ -1153,8 +1149,8 @@ footer {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects--active:hover .project--action,
-.projects--active:focus .project--action {
+.project--active:hover .project--action,
+.project--active:focus .project--action {
     
     transform: translateY(0);
     opacity: 1;
